@@ -79,11 +79,13 @@ class ProductsController extends Controller
             $product->image = $image_path_name;
 
             if($product-> save()):
+                /*
                 $nameimg = $image_path_name;
                 $minfile = $nameimg;
                 $img = Image::make($minfile);
                 $img->resize(320, 240);
                 $img->save('public/'.$image_path_name);
+                */
 
                 /* para guardar la foto en public/im/products
                 $fileExt = trim($request->file('img')->getClientOriginalExtension());
